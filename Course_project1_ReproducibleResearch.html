@@ -121,7 +121,7 @@ $(document).ready(function () {
 </div>
 
 
-<pre class="r"><code>#Loading and preprocessing the data
+<pre class="r"><code>#Loading the data
 
 if (!file.exists('activity.csv')) {
   unzip(zipfile = &quot;activity.zip&quot;)
@@ -129,7 +129,7 @@ if (!file.exists('activity.csv')) {
 
 activityData &lt;- read.csv(file=&quot;activity.csv&quot;, header=TRUE)</code></pre>
 <p>What is mean total number of steps taken per day?</p>
-<pre class="r"><code># Calculate the total steps taken per day
+<pre class="r"><code># The total steps taken per day calculated
 totalSteps &lt;- aggregate(steps ~ date, activityData, FUN=sum)
 
 # Make a histogram of the total number of steps taken per day
@@ -163,7 +163,7 @@ maxInt &lt;- meanStepsByInt[which.max(meanStepsByInt$steps),]</code></pre>
 missingVals &lt;- is.na(activityData$steps)
 
 # Devise a strategy for filling in all of the missing values</code></pre>
-<p>There are 17568 missing values. I will replace these missing values with the 5-day average of that respective interval.</p>
+<p>There are 17568 missing values. What I intend doing here is to replace these missing values with the 5-day average of that respective interval.</p>
 <pre class="r"><code># Create a new dataset that is equal to the original dataset but with 
 # the missing data filled in.
 imp_activityData &lt;- transform(activityData,

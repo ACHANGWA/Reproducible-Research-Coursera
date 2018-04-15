@@ -62,7 +62,7 @@ missingVals <- is.na(activityData$steps)
 
 # Devise a strategy for filling in all of the missing values
 ```
-There are 17568 missing values. I will replace these missing values with the 5-day average of that respective interval.
+There are 17568 missing values. What I intend doing here is to replace these missing values with the 5-day average of that respective interval.
 
 ```{r}
 # Create a new dataset that is equal to the original dataset but with 
