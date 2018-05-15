@@ -1,0 +1,13 @@
+name: analysisofsevereweatherevents
+title: AnalysisOfSevereWeatherEvents
+username: ACHANGWA
+account: ACHANGWA
+server: beta.rstudioconnect.com
+hostUrl: https://beta.rstudioconnect.com/__api__
+appId: 3521
+bundleId: 7902
+url: https://beta.rstudioconnect.com/content/3521/
+when: 1525016149.77486
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: StormDataDocumentation.pdf|StormEventsFAQ.pdf|StormData.csv.bz2
